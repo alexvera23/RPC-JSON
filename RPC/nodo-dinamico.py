@@ -7,7 +7,7 @@ import sys
 import random
 
 # --- ESTADO GLOBAL DEL NODO ---
-IP_LOCAL = '192.168.1.76' # Cambia esto a tu IP real
+IP_LOCAL = '172.26.166.127' # Cambia esto a tu IP real
 PUERTO_LOCAL = 0
 CAPACIDAD_BYTES = 0
 VECINOS = set()
@@ -216,8 +216,8 @@ if __name__ == "__main__":
     hilo_servidor = threading.Thread(target=iniciar_nodo, daemon=True)
     hilo_servidor.start()
 
-    nodos_semilla = [["192.168.1.76", 6001],
-        ["192.168.1.76", 6002],
+    nodos_semilla = [["172.26.166.127", 6001],
+        ["172.26.166.127", 6002],
         ["192.168.1.76", 6003]]
     
     if len(sys.argv) == 4:

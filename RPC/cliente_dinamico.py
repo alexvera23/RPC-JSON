@@ -9,8 +9,8 @@ ARCHIVO_ESTADO = "estado_red.json"
 def cargar_estado():
     # LISTA DE NODOS SEMILLA (Bootstrappers)
     nodos_semilla_por_defecto = [
-        ["192.168.1.74", 6001],
-        ["192.168.1.74", 6002],
+        ["172.26.166.127", 6001],
+        ["172.26.166.127", 6002],
         ["192.168.1.76", 6003]
     ]
     
